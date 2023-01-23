@@ -1,7 +1,7 @@
-import { resolvers } from './resolver';
-import Fastify from 'fastify';
-import mercurius from 'mercurius';
-import { schema } from './schema';
+import { resolvers } from "./resolver";
+import Fastify from "fastify";
+import mercurius from "mercurius";
+import { schema } from "./schema";
 
 const port = 3000;
 
@@ -13,8 +13,10 @@ app.register(mercurius, {
   resolvers,
 });
 
-app.get('/', async function (req, reply) {
-  return reply.send('Hello World');
+app.get("/", async function (req, reply) {
+  return reply.send("Hello World");
 });
 
-app.listen({ port: port }, () => console.log(`app is running at http://localhost:${port}`));
+app.listen({ port: port }, () =>
+  console.log(`app is running at http://localhost:${port}`)
+);

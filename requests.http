@@ -1,4 +1,0 @@
-POST /api/2.0/auth/accessToken HTTP/1.1
-Accept: application/json
-Content-Type: application/json
-Host: https://italent2.demo.lithium.com
