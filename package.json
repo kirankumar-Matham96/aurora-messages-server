@@ -2,18 +2,18 @@
   "name": "fastify-messages",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "server.mjs",
   "scripts": {
-    "dev": "ts-node-dev --respawn server.ts",
-    "khoros": "nodemon khorosFetcher.js"
+    "dev": "nodemon server.mjs",
+    "khoros": "nodemon khorosFetcher.mjs"
   },
   "author": "ME",
   "license": "ISC",
   "dependencies": {
     "fastify": "^4.11.0",
+    "got": "^12.5.3",
     "graphql": "^16.6.0",
     "mercurius": "^11.5.0",
-    "got": "^12.5.3",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
