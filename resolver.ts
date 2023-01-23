@@ -1,6 +1,6 @@
-import { data } from './mockData';
+import { getMessages } from "./mockData";
 export const resolvers = {
   Query: {
-    messages: () => data.items,
+    messages: () => "Hello",
   },
 };
