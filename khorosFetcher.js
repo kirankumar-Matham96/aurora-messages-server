@@ -31,7 +31,8 @@ const getToken = async (communityAddress, username, password) => {
 
 const { address, username, password } = community;
 getToken(address, username, password).then((response) => {
-  console.log("respnose is ", response);
+  // console.log("respnose is ", response);
+  return response;
 });
 
 const token = await getToken(address, username, password);
@@ -48,14 +49,15 @@ export const getMessages = async () => {
       json: [
         {
           messages: {
-            fields: ["id", "subject"],
+            fields: [],
+            limit: 10
           },
         },
       ],
     })
     .json();
 
-  console.log("response is ", response);
+  // console.log("response is ", response);
 
   return response;
 };

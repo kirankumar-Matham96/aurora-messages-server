@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.ts",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node-dev --respawn server.ts",
+    "dev": "nodemon server.js",
     "khoros": "nodemon khorosFetcher.js"
   },
   "author": "ME",

@@ -154,7 +154,7 @@ type UserContext {
  }
 
  type Query {
-    messages: Data
+    messages : Data
   }
 
 `;
