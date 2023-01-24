@@ -1,7 +1,7 @@
-import { resolvers } from "./resolver";
+import { resolvers } from "./resolver.js";
 import Fastify from "fastify";
 import mercurius from "mercurius";
-import { schema } from "./schema";
+import { schema } from "./schema.js";
 
 const port = 3000;
 
